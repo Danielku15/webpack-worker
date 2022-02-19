@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <% if(htmlWebpackPlugin.files.head) { %>
+    <script src="<%= htmlWebpackPlugin.files.head.entry %>"></script>
+    <% } %>
+  </head>
+
+  <body>
+    <% if(htmlWebpackPlugin.files.body) { %>
+    <script src="<%= htmlWebpackPlugin.files.body.entry %>"></script>
+    <% } %>
+  </body>
+</html>
