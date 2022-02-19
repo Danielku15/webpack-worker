@@ -1,2 +1,3 @@
-import { MyLib } from "./mylib.js";
-MyLib.start();
+import('./mylib.js').then(myLib=>{
+    myLib.MyLib.start();
+});
